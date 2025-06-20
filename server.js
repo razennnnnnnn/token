@@ -14,7 +14,6 @@ const server = http.createServer((req, res) => {
             res.end(JSON.stringify({ status: 'success' }));
         });
     } else {
-        // Pour éviter une erreur 404 sur la racine, renvoie une réponse simple
         res.writeHead(200, { 'Content-Type': 'text/plain' });
         res.end('Serveur actif. Utilisez /collect pour envoyer des tokens.');
     }
