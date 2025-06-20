@@ -1,0 +1,15 @@
+{
+  "name": "token-server",
+  "version": "1.0.0",
+  "description": "Serveur pour recevoir des tokens",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

